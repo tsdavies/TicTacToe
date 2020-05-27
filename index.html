@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+            content="width=device-width, user-scalable=no, maximum-scale=1, minimum-scale=1, shrink-to-fit=no"
+            name="viewport"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+        <link href="index.css" rel="stylesheet" />
+        <title>TicTacToe</title>
+    </head>
+
+    <body class="flexy">
+        <div>
+            <h1 data-testid="title">Tic Tac Toe</h1>
+            <table data-testid="table">
+                <tr data-testid="table-row1">
+                    <td data-testid="table-row1-cell1"></td>
+                    <td class="vertical" data-testid="table-row1-cell2"></td>
+                    <td data-testid="table-row1-cell3"></td>
+                </tr>
+                <tr data-testid="table-row2">
+                    <td class="horizontal" data-testid="table-row2-cell1"></td>
+                    <td class="vertical horizontal" data-testid="table-row2-cell2"></td>
+                    <td class="horizontal" data-testid="table-row2-cell3"></td>
+                </tr>
+                <tr data-testid="table-row3">
+                    <td data-testid="table-row3-cell1"></td>
+                    <td class="vertical" data-testid="table-row3-cell2"></td>
+                    <td data-testid="table-row3-cell3"></td>
+                </tr>
+            </table>
+
+            <div id="message" class="center" data-testid="message">
+                <h3>X goes first</h3>
+            </div>
+            <div id="restart" class="center" data-testid="restart-game">
+                <h5>Restart</h5>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

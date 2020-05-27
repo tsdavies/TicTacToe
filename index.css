@@ -1,0 +1,66 @@
+html {
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: #66ff66;
+}
+
+.vertical {
+    border-left: 4px solid #66ff66;
+    border-right: 4px solid #66ff66;
+}
+
+.horizontal {
+    border-top: 4px solid #66ff66;
+    border-bottom: 4px solid #66ff66;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+}
+
+table {
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+#restart {
+    color: lightsteelblue;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 30px;
+    right: 0;
+}
+
+.flash {
+    color: #66ff66;
+    animation-name: flashanim;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes flashanim {
+    0% {
+        color: #000000;
+    }
+
+    100% {
+        color: #66ff66;
+    }
+}
+
+.flexy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100vw;
+}
