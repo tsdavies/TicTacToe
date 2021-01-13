@@ -1,0 +1,27 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "TicTacToe learning exercise",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^6.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "test": "cypress run",
+    "start": "serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsdavies/TicTacToe.git"
+  },
+  "author": "T.S.Davies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsdavies/TicTacToe/issues"
+  },
+  "homepage": "https://github.com/tsdavies/TicTacToe#readme"
+}

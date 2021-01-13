@@ -1,11 +1,13 @@
 # TicTacToe
 
-## Setup and tooling
-
-You'll need a webserver to run this, if you have npm installed you can just:
+## Setup
 
 ```sh
-npx serve .
+npm start
 ```
 
-You can grab Node and NPM here: https://nodejs.org/en/
+## Tooling
+
+```sh
+npm test
+```

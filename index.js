@@ -55,12 +55,12 @@ let hasWon = false
 let moveCounter = 0
 let xTurn = true
 
-const getSymbol = () => (xTurn ? 'X' : '0')
+const getSymbol = () => (xTurn ? "X" : "0")
 const isDraw = () => moveCounter === BOARD_SQUARES
 const isGameOver = () => hasWon || isDraw()
 
 const setMessage = (message, messageStyle) => {
-    const messageNode = document.getElementById('message')
+    const messageNode = document.getElementById("message")
     messageNode.innerHTML = `<h3 class="${messageStyle}">${message}</h3>`
 }
 
@@ -77,10 +77,10 @@ const clickHandler = ({ board, square, index }) => {
         hasWon = isWinner(board, winningLines)
 
         if (hasWon) {
-            setMessage(`${symbol} wins! `, 'flash')
+            setMessage(`${symbol} wins! `, "flash")
         } else {
             if (isDraw()) {
-                setMessage(`<p>It's a tie!</p>`, 'flash')
+                setMessage(`<p>It's a tie!</p>`, "flash")
             } else {
                 setMessage(`<p>Next turn is ${getSymbol(xTurn)}</p>`)
             }
@@ -88,13 +88,13 @@ const clickHandler = ({ board, square, index }) => {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     const board = newGame()
     // Convert HTMLCollection to Array, because annoying. (Enables forEach loop)
-    const boardDOM = Array.from(document.getElementsByTagName('td'))
+    const boardDOM = Array.from(document.getElementsByTagName("td"))
     // We have all <td> elements (in board), loop over each and add a click event listener
     boardDOM.forEach((square, index) => {
-        square.addEventListener('click', () =>
+        square.addEventListener("click", () =>
             clickHandler({
                 board,
                 square,
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         )
     })
 
-    const restartNode = document.getElementById('restart')
+    const restartNode = document.getElementById("restart")
     restartNode.onclick = () => {
         window.location.reload()
     }
