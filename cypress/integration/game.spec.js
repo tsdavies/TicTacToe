@@ -1,6 +1,6 @@
 describe("Turn based game", () => {
     before(() => {
-        cy.visit("http://localhost:5000")
+        cy.visit("https://tsdavies.github.io/TicTacToe/")
     })
     it("Places an X in the top left square", () => {
         cy.get("[data-testid=table-row1-cell1]").click()
