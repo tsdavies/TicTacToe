@@ -4,7 +4,7 @@ describe("Turn based game", () => {
     })
     it("Places an X in the top left square", () => {
         cy.get("[data-testid=table-row1-cell1]").click()
-        cy.contains("[data-testid=table-row1-cell6]", "X")
+        cy.contains("[data-testid=table-row1-cell1]", "X")
         cy.contains("[data-testid=message]", "Next turn is 0")
     })
     it("Can't place a piece in a space that is occupied", () => {
