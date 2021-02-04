@@ -12,6 +12,7 @@
   },
   "scripts": {
     "test": "cypress run",
+    "test:ui": "cypress open",
     "start": "serve ."
   },
   "repository": {
