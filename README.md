@@ -14,7 +14,7 @@ npm start
 npm test // ci mode
 ```
 ```sh
-npm run test:ui
+npm run test:ui // interactive mode
 ```
 ![Cypress](https://user-images.githubusercontent.com/31829478/104397633-206c3980-5545-11eb-95b6-38abce4f4202.gif "")
 
