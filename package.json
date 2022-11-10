@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "prettier": "^2.2.1",
-    "serve": "^11.3.2"
+    "serve": "^14.1.1"
   },
   "scripts": {
     "test": "cypress run",
